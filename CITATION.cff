@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software or the derived data, please cite the paper."
+title: "CentroSeek"
+abstract: >-
+  Sequence-only ranking of candidate alpha-satellite higher-order-repeat arrays
+  to identify the functional centromere on a chromosome, with the analysis
+  reproducing Active Centromeres Share a Conserved Array-Architecture Signature
+  Across Great Ape Genomes.
+type: software
+license: MIT
+version: 1.0.0
+authors:
+  - family-names: Guruacharya
+    given-names: Anuj
+  - family-names: Rajbanshi
+preferred-citation:
+  type: article
+  title: >-
+    Active Centromeres Share a Conserved Array-Architecture Signature Across
+    Great Ape Genomes
+  authors:
+    - family-names: Guruacharya
+      given-names: Anuj
+    - family-names: Rajbanshi
+  year: 2026
+keywords:
+  - centromere
+  - alpha satellite
+  - higher-order repeat
+  - telomere-to-telomere
+  - comparative genomics
+  - sequence complexity

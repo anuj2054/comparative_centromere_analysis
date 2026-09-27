@@ -1,0 +1,20 @@
+chrom,n_arrays,n_censat_active,cenpa_array,cenpa_span_kb,cenpa_is_censat_active,cenpa_margin_over_runner_up,largest_rival_kb,size_ratio_active_vs_rival,difficulty,homogeneity_call,homogeneity_hit,length_call,length_hit,model_call,model_hit,bz2_active,bz2_best_rival
+chr1,7,1,hor_1_5(S1C1/5/19H1L),4504.4,True,3.99,290.3,15.5157,easy (5-20x),hor_1_5(S1C1/5/19H1L),True,hor_1_5(S1C1/5/19H1L),True,hor_1_5(S1C1/5/19H1L),True,1.635,2.0899
+chr2,2,1,hor_2_4(S2C2H1L),2339.5,True,3.59,22.0,106.1277,trivial (>20x),hor_2_4(S2C2H1L),True,hor_2_4(S2C2H1L),True,hor_2_4(S2C2H1L),True,1.5386,1.9707
+chr3,4,3,hor_3_2(S01/1C3H1L),857.8,True,1.12,675.6,1.2696,hard (<2x),hor_3_3(S01/1C3H1L),False,hor_3_2(S01/1C3H1L),True,hor_3_3(S01/1C3H1L),False,1.9646,1.9573
+chr4,4,3,hor_4_2(S2C4H1L),2755.0,True,1.09,728.4,3.7823,moderate (2-5x),hor_4_2(S2C4H1L),True,hor_4_2(S2C4H1L),True,hor_4_2(S2C4H1L),True,1.8864,1.9006
+chr5,7,1,hor_5_6(S1C1/5/19H1L),2519.4,True,7.15,328.4,7.6709,easy (5-20x),hor_5_6(S1C1/5/19H1L),True,hor_5_6(S1C1/5/19H1L),True,hor_5_6(S1C1/5/19H1L),True,1.5906,1.9
+chr7,2,1,hor_7_2(S1C7H1L),3300.1,True,6.71,204.0,16.1758,easy (5-20x),hor_7_2(S1C7H1L),True,hor_7_2(S1C7H1L),True,hor_7_2(S1C7H1L),True,1.5221,1.9709
+chr10,4,1,hor_10_1(S1C10H1L),2030.8,True,5.72,114.7,17.7125,easy (5-20x),hor_10_1(S1C10H1L),True,hor_10_1(S1C10H1L),True,hor_10_1(S1C10H1L),True,1.7277,1.8771
+chr11,4,2,hor_11_3(S3C11H1L),3351.5,True,4.6,29.9,112.2379,trivial (>20x),hor_11_3(S3C11H1L),True,hor_11_3(S3C11H1L),True,hor_11_3(S3C11H1L),True,1.7477,1.972
+chr12,2,1,hor_12_2(S1C12H1L),2581.7,True,3.81,27.3,94.4069,trivial (>20x),hor_12_2(S1C12H1L),True,hor_12_2(S1C12H1L),True,hor_12_2(S1C12H1L),True,1.6998,1.916
+chr13,3,1,hor_13_3(S2C13/21H1L),1950.7,True,9.57,35.9,54.3249,trivial (>20x),hor_13_3(S2C13/21H1L),True,hor_13_3(S2C13/21H1L),True,hor_13_3(S2C13/21H1L),True,1.8129,1.8336
+chr14,3,1,hor_14_3(S2C14/22H1L),2616.3,True,6.96,78.4,33.3793,trivial (>20x),hor_14_3(S2C14/22H1L),True,hor_14_3(S2C14/22H1L),True,hor_14_3(S2C14/22H1L),True,1.8104,1.8474
+chr15,4,1,hor_15_4(S2C15H1L),1015.7,True,11.55,559.0,1.817,hard (<2x),hor_15_4(S2C15H1L),True,hor_15_4(S2C15H1L),True,hor_15_4(S2C15H1L),True,1.8308,1.9938
+chr16,2,2,hor_16_4(S1C16H1L),1938.8,True,3.63,36.2,53.6046,trivial (>20x),hor_16_4(S1C16H1L),True,hor_16_4(S1C16H1L),True,hor_16_4(S1C16H1L),True,1.7454,1.9053
+chr17,3,1,hor_17_2(S3C17H1L),3594.5,True,3.52,459.0,7.8304,easy (5-20x),hor_17_2(S3C17H1L),True,hor_17_2(S3C17H1L),True,hor_17_2(S3C17H1L),True,2.0178,2.0754
+chr18,6,2,hor_18_5(S2C18H1L),4768.6,True,2.27,300.7,15.8567,easy (5-20x),hor_18_5(S2C18H1L),True,hor_18_5(S2C18H1L),True,hor_18_5(S2C18H1L),True,1.8466,1.8719
+chr19,8,2,hor_19_13(S1C1/5/19H1L),3917.1,True,4.21,558.8,7.0103,easy (5-20x),hor_19_13(S1C1/5/19H1L),True,hor_19_13(S1C1/5/19H1L),True,hor_19_13(S1C1/5/19H1L),True,1.3516,1.8592
+chr20,6,1,hor_20_2(S2C20H1L),2173.8,True,4.22,542.2,4.0093,moderate (2-5x),hor_20_4(S5C20H6),False,hor_20_2(S2C20H1L),True,hor_20_4(S5C20H6),False,1.8459,1.5152
+chr21,2,1,hor_21_3(S2C13/21H1L),331.1,True,35.08,72.8,4.5485,moderate (2-5x),hor_21_3(S2C13/21H1L),True,hor_21_3(S2C13/21H1L),True,hor_21_3(S2C13/21H1L),True,1.8426,2.0647
+chr22,8,1,hor_22_9(S2C14/22H1L),2922.9,True,6.82,191.6,15.2563,easy (5-20x),hor_22_9(S2C14/22H1L),True,hor_22_9(S2C14/22H1L),True,hor_22_9(S2C14/22H1L),True,1.8166,2.0707

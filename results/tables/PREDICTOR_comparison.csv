@@ -1,0 +1,29 @@
+variant,feature_set,features,top1_hits,top1_n,top1_acc,top1_ci_low,top1_ci_high,auroc,auroc_ci_low,auroc_ci_high
+leaky,A. length only,log_span,19,19,1.0,1.0,1.0,0.9898,0.9655,1.0
+leaky,B. homogeneity only,"bz2,H11",17,19,0.8947,0.7368,1.0,0.9211,0.8312,0.9909
+leaky,C. length + homogeneity,"log_span,bz2,H11",18,19,0.9474,0.8421,1.0,0.9856,0.9529,1.0
+leaky,"D. current model (bz2,H11)","bz2,H11",17,19,0.8947,0.7368,1.0,0.9211,0.8312,0.9909
+leaky,GC (baseline),gc,9,19,0.4737,0.2632,0.6842,0.4949,0.418,0.6059
+leaky,length-residual homogeneity,"bz2_resid,H11_resid",7,19,0.3684,0.1579,0.5789,0.584,0.4153,0.7369
+leaky,DELTA[auc] B. homogeneity only - A. length only,,,,,,,-0.0688,-0.1587,0.0
+leaky,DELTA[top1] B. homogeneity only - A. length only,,,,-0.1053,-0.2632,0.0,,,
+leaky,DELTA[auc] C. length + homogeneity - A. length only,,,,,,,-0.0042,-0.0334,0.0195
+leaky,DELTA[top1] C. length + homogeneity - A. length only,,,,-0.0526,-0.1579,0.0,,,
+leaky,DELTA[auc] C. length + homogeneity - B. homogeneity only,,,,,,,0.0645,0.0079,0.1406
+leaky,DELTA[top1] C. length + homogeneity - B. homogeneity only,,,,0.0526,0.0,0.1579,,,
+leaky,DELTA[auc] length-residual homogeneity - GC (baseline),,,,,,,0.0891,-0.1579,0.2881
+leaky,DELTA[top1] length-residual homogeneity - GC (baseline),,,,-0.1053,-0.3684,0.2105,,,
+clean,A. length only,log_span,19,19,1.0,1.0,1.0,0.9898,0.9652,1.0
+clean,B. homogeneity only,"bz2,H11",17,19,0.8947,0.7368,1.0,0.9219,0.8289,0.993
+clean,C. length + homogeneity,"log_span,bz2,H11",18,19,0.9474,0.8421,1.0,0.9856,0.9528,1.0
+clean,"D. current model (bz2,H11)","bz2,H11",17,19,0.8947,0.7368,1.0,0.9219,0.8289,0.993
+clean,GC (baseline),gc,9,19,0.4737,0.2632,0.6842,0.4949,0.4159,0.6033
+clean,length-residual homogeneity,"bz2_resid,H11_resid",8,19,0.4211,0.2105,0.6842,0.6138,0.4457,0.7887
+clean,DELTA[auc] B. homogeneity only - A. length only,,,,,,,-0.0679,-0.1636,0.003
+clean,DELTA[top1] B. homogeneity only - A. length only,,,,-0.1053,-0.2632,0.0,,,
+clean,DELTA[auc] C. length + homogeneity - A. length only,,,,,,,-0.0042,-0.0317,0.0195
+clean,DELTA[top1] C. length + homogeneity - A. length only,,,,-0.0526,-0.1579,0.0,,,
+clean,DELTA[auc] C. length + homogeneity - B. homogeneity only,,,,,,,0.0637,0.0056,0.1443
+clean,DELTA[top1] C. length + homogeneity - B. homogeneity only,,,,0.0526,0.0,0.1579,,,
+clean,DELTA[auc] length-residual homogeneity - GC (baseline),,,,,,,0.1188,-0.1329,0.3392
+clean,DELTA[top1] length-residual homogeneity - GC (baseline),,,,-0.0526,-0.3158,0.2105,,,

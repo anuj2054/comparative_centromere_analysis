@@ -1,0 +1,30 @@
+{
+  "name": "CentroSeek",
+  "version": "1.0.0",
+  "task": "Rank candidate alpha-satellite HOR arrays WITHIN one chromosome and return the one most likely to carry the kinetochore. The score is not calibrated across chromosomes and is meaningless applied genome-wide.",
+  "features": ["bz2_bpb", "H11"],
+  "feature_notes": {
+    "bz2_bpb": "mean bzip2 compressed size in bits per base over 2 kbp windows tiled across the array; lower = more homogeneous",
+    "H11": "mean Shannon entropy of 11-mers over the same windows, in bits"
+  },
+  "model": "L2-regularised logistic regression (scikit-learn, C=1.0, lbfgs), applied to standardised features",
+  "standardisation": {"mean": [1.939254, 10.171459], "scale": [0.161665, 0.310947]},
+  "coefficients": [-0.551213, -1.405428],
+  "intercept": -0.866193,
+  "training": {
+    "genome": "T2T-CHM13 v2.0 (GCA_009914755.4)",
+    "arrays": 81,
+    "chromosomes": 19,
+    "label": "CenSat v2.1 active_hor designation (27 of the 81 arrays)",
+    "label_caveat": "The deployed coefficients are fitted on the CenSat active_hor label, not on the CENP-A-defined label used to SCORE the predictor in the manuscript. The two agree on which array is top-ranked on all 19 chromosomes but differ at the array level (27 CenSat-active arrays against 19 CENP-A-active arrays), so they do not produce identical coefficients. Refit on the CENP-A label with fit_model.py --label cenpa if you want the alternative.",
+    "source_table": "results/tables/array_level_19chrom.csv",
+    "regenerate": "python -m centroseek.fit_model"
+  },
+  "reported_performance": {
+    "human_top1": "17/19 chromosomes, leave-one-chromosome-out",
+    "human_auroc": "0.922 (95% CI 0.83-0.99), pooled held-out",
+    "ape_top1": "38/47 chromosomes, applied without retraining",
+    "baseline_longest_array_top1": "19/19 human, 44/47 ape",
+    "honest_summary": "The parameter-free longest-array rule outperforms this model on both datasets. CentroSeek earns its place by recovering the three bonobo chromosomes where the length rule fails, not by being the better general predictor. Run both."
+  }
+}

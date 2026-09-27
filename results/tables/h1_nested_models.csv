@@ -1,0 +1,15 @@
+model,features,cv_auroc_mean,cv_auroc_sd
+GC only,gc,0.8194444444444444,0.11180339887498945
+GC + H1,"gc,H1",0.8166666666666667,0.11090258209820626
+GC + H1 + H3,"gc,H1,H3",0.7944444444444445,0.1029652944047258
+GC + H1 + R_shuffle,"gc,H1,R_shuffle",0.9416666666666668,0.07474235581707617
+all complexity,"gc,H1,H3,H11,lz_norm,gzip_bpb,bz2_bpb,R_shuffle",0.9333333333333333,0.06478835438717002
+[single] gc,gc,0.8091666666666667,0.0
+[single] H1,H1,0.7749999999999999,0.0
+[single] H3,H3,0.8005555555555556,0.0
+[single] H11,H11,0.9227777777777778,0.0
+[single] lz_norm,lz_norm,0.8813888888888889,0.0
+[single] gzip_bpb,gzip_bpb,0.8783333333333333,0.0
+[single] bz2_bpb,bz2_bpb,0.7872222222222223,0.0
+[single] R_uniform,R_uniform,0.5,0.0
+[single] R_shuffle,R_shuffle,0.8355555555555555,0.0

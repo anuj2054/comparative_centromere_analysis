@@ -1,0 +1,18 @@
+# SHA256 of the reference inputs, as used for every number in the manuscript.
+# Verify after fetching:  shasum -a 256 -c data/checksums.sha256
+# Entries are added here as each file is fetched; run data/make_checksums.sh to
+# regenerate for files you have downloaded yourself.
+#
+# Nothing here is committed. Every entry is absent from a fresh clone, so `shasum -c`
+# reports it missing until data/fetch.sh has fetched it. Use --ignore-missing to check
+# only what you have.
+#
+# ./data/fetch.sh assemblies annotations
+f274b0ee8bc1bca18d231d0eb80d764650d7f02d1fe07c43819e21168224304d  chm13v2.0.fa.gz
+2fecb4bddba9c643c259fc8d2136a59ef070a77c2a76c84ee8645c96da562946  chm13v2.0_censat_v2.1.bed
+#
+# ./data/fetch.sh extracts — the four chr21 extracts Fig. S5 is built from.
+4cedea9dff414ffcb113f7a32684af869ce52de699397a3632608184084ecbc2  chr21_map.fasta
+75c31b7220d689f713d35f943de22184b320edd8ef898a74f2d70df0fa870f25  coding_cds.fasta
+3088f6fffd35cf2220df397a84226c2d569d065f122db0de4073fc91c649c8c9  satellite.fasta
+308e512f31f61a4ead3ba3044c00e4d2d285f5eea695e543d9078961e01d354a  unique.fasta

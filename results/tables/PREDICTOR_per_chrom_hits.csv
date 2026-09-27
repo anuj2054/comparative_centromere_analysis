@@ -1,0 +1,20 @@
+chrom,n_arrays,clean_A. length only,clean_B. homogeneity only,clean_C. length + homogeneity,"clean_D. current model (bz2,H11)",clean_GC (baseline),clean_length-residual homogeneity,leaky_A. length only,leaky_B. homogeneity only,leaky_C. length + homogeneity,"leaky_D. current model (bz2,H11)",leaky_GC (baseline),leaky_length-residual homogeneity
+chr1,7,1,1,1,1,0,1,1,1,1,1,0,1
+chr2,2,1,1,1,1,1,1,1,1,1,1,1,1
+chr3,4,1,0,1,0,0,0,1,0,1,0,0,0
+chr4,4,1,1,1,1,0,0,1,1,1,1,0,0
+chr5,7,1,1,1,1,0,1,1,1,1,1,0,1
+chr7,2,1,1,1,1,1,1,1,1,1,1,1,1
+chr10,4,1,1,1,1,0,0,1,1,1,1,0,0
+chr11,4,1,1,1,1,0,0,1,1,1,1,0,0
+chr12,2,1,1,1,1,1,0,1,1,1,1,1,0
+chr13,3,1,1,1,1,1,0,1,1,1,1,1,0
+chr14,3,1,1,1,1,1,0,1,1,1,1,1,0
+chr15,4,1,1,1,1,1,1,1,1,1,1,1,1
+chr16,2,1,1,1,1,1,0,1,1,1,1,1,0
+chr17,3,1,1,1,1,0,0,1,1,1,1,0,0
+chr18,6,1,1,1,1,0,0,1,1,1,1,0,0
+chr19,8,1,1,1,1,0,1,1,1,1,1,0,1
+chr20,6,1,0,0,0,0,0,1,0,0,0,0,0
+chr21,2,1,1,1,1,1,1,1,1,1,1,1,1
+chr22,8,1,1,1,1,1,1,1,1,1,1,1,0

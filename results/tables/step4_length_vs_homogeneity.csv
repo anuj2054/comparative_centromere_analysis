@@ -1,0 +1,19 @@
+panel,features,auroc,lo,hi
+"(A) HUMAN, functional CENP-A label",length only,0.9898132427843802,0.968421052631579,1.0
+"(A) HUMAN, functional CENP-A label",homogeneity only (bz2+H11),0.9219015280135823,0.8279695633314055,0.9895129615082483
+"(A) HUMAN, functional CENP-A label",length + homogeneity,0.9855687606112054,0.9703268867355554,1.0
+"(A) HUMAN, functional CENP-A label",length-residual homogeneity,0.5840407470288624,0.24692982456140353,0.7514293546365914
+"(A) HUMAN, functional CENP-A label",GC (baseline),0.4949066213921901,0.19423046649525108,0.7520678670360109
+"(A) HUMAN, functional CENP-A label",DELTA homogeneity only (bz2+H11) - length only,-0.06595475559657846,-0.16062499999999996,-0.002652765388046342
+"(A) HUMAN, functional CENP-A label",DELTA length + homogeneity - length only,0.0007586418328665936,-0.01278779659613232,0.019020467836257337
+"(A) HUMAN, functional CENP-A label",DELTA length + homogeneity - homogeneity only (bz2+H11),0.06671339742944506,0.006997144022847832,0.16430679686637983
+"(A) HUMAN, functional CENP-A label",DELTA length-residual homogeneity - GC (baseline),0.08075755737292535,-0.378931941923775,0.5028628018986457
+"(B) APES, CenSat active_hor label",length only,0.9509509509509511,0.9006274281274281,0.9886566091954023
+"(B) APES, CenSat active_hor label",homogeneity only (bz2+H11),0.8738738738738739,0.8022497625830959,0.9436378205128205
+"(B) APES, CenSat active_hor label",length + homogeneity,0.9439439439439441,0.8978386478803608,0.984196875
+"(B) APES, CenSat active_hor label",length-residual homogeneity,0.5075075075075075,0.19658342369205747,0.7185714224433768
+"(B) APES, CenSat active_hor label",GC (baseline),0.8918918918918919,0.7858774038461538,0.9687073996265173
+"(B) APES, CenSat active_hor label",DELTA homogeneity only (bz2+H11) - length only,-0.07350804796956974,-0.15129040077569492,-0.01206820276497697
+"(B) APES, CenSat active_hor label",DELTA length + homogeneity - length only,-0.004492338381888613,-0.024818548387096757,0.010993240630337438
+"(B) APES, CenSat active_hor label",DELTA length + homogeneity - homogeneity only (bz2+H11),0.0690157095876811,0.0061150472334683,0.1475185929731383
+"(B) APES, CenSat active_hor label",DELTA length-residual homogeneity - GC (baseline),-0.3760184527636761,-0.6577624296314998,-0.15574656824656818

@@ -1,0 +1,21 @@
+# Exact versions used for every number in the manuscript.
+# Python 3.9.6 (CPython), macOS arm64.
+numpy==2.0.2
+pandas==2.3.3
+scipy==1.13.1
+scikit-learn==1.6.1
+matplotlib==3.9.4
+
+# Reading the CENP-A, IgG, Fiber-seq and methylation signal tracks, and the
+# CenSat bigBeds. Needed only to rebuild the functional labels from raw data.
+pyBigWig==0.3.25
+pysam==0.24.0
+
+# Needed only by src/analyze_other_compartments.py (Fig. S4, the preliminary compartment
+# probes in Supplementary Note 2). Unpinned because it is not installed in the
+# environment the published numbers came from, so there is no version to pin
+# honestly; Fig. S4 is the one figure this environment cannot regenerate.
+pyfaidx
+
+# NOT listed: torch. Evo 2 per-base surprise used the published evo2_7b
+# checkpoint on GPU and cannot run here. See environment.md.
