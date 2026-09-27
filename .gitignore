@@ -1,0 +1,50 @@
+# Reference data is fetched, never committed. data/fetch.sh brings it in. No exceptions:
+# the four small chr21 extracts used to be committed so Fig. S5 built offline, but two
+# other figure scripts reach the network anyway, so the exception bought nothing.
+# `data/fetch.sh extracts` pulls them from NCBI in a few seconds; the hashes that pin
+# them are in data/checksums.sha256.
+data/*.fa
+data/*.fa.gz
+data/*.fasta
+data/*.fasta.gz
+data/*.bed
+data/*.bb
+data/*.bw
+data/*.fastq
+data/*.fastq.gz
+data/*.part
+!data/checksums.sha256
+
+# Alignments and signal tracks: large, and derived from the fetched reads.
+*.bam
+*.bam.bai
+*.cram
+*.bigWig
+
+# Third-party publications are NOT redistributable. Path-independent on purpose:
+# an earlier directory reorganisation silently un-ignored 225 MB of this material.
+Gao2026.pdf
+**/Gao2026.pdf
+GaoSupplementaryMaterials/
+**/GaoSupplementaryMaterials/
+*.pdf
+
+# Environments and build noise
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.ipynb_checkpoints/
+
+# Scripts write run logs and intermediate panels as a by-product. Those are outputs,
+# not deposited data, so a clone that runs `make figures` should not report them as
+# untracked. The 16 published figures are all named fig*.png and stay tracked.
+results/*_log.txt
+results/figures/*.png
+!results/figures/fig*.png
+
+# Scratch space for the large intermediates: the genome atlas, the RepeatMasker bed,
+# the sequence caches. Repo-relative so nothing is lost to a /tmp clear. Move it with
+# GC_WORK, or point at a single file with GC_ATLAS, GC_REPEATMASKER, CHM13_FA, SEQ_CACHE.
+work/
