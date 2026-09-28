@@ -1,4 +1,4 @@
-# CentroSeek
+# Comparative centromere analysis of great apes and its signature for centromere prediction
 
 Which α-satellite higher-order-repeat array on a chromosome is the functional
 centromere, decided from assembled sequence alone.
